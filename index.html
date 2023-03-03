@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World War II Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Background image-->
+    <div class="background-image"></div>
+
+    <!-- Game Title and Start Button -->
+    <section class="intro">
+      <h1 class="game-name">WORLD WAR II Q & A</h1>
+      <button type="button" class="btn-rules">Rules</button>
+      <button type="button" class="btn-start">Start</button>
+    </section>
+
+    <!--Rules of the Game Section-->
+    <section class="game-rules">
+      <div class="rules">
+        <ul class="list-of-rules">
+          <li>
+            The quiz has a total of
+            <span class="number-of-questions">0</span> questions
+          </li>
+          <li>
+            Every question will have four options and only one of them is the
+            correct answer
+          </li>
+          <li>
+            Every correct answer will award you
+            <span class="correct-point">3 points</span>
+          </li>
+          <li>
+            Every wrong answer will remove
+            <span class="wrong-point">1 point</span>
+          </li>
+          <li>There is no penalty for wrong answers in the first question</li>
+          <li>
+            Do not refresh the page, the quiz will then start from the beginning
+          </li>
+        </ul>
+      </div>
+
+      <button type="button" class="btn-start">Start</button>
+    </section>
+
+    <!-- Question and Answer section -->
+    <section class="question-answer">
+      <div class="question-area">
+        <!-- Question -->
+        <p class="question-box">This will show if JavaScript is not working</p>
+
+        <!-- Image -->
+        <div class="question-img-box">
+          <p class="current-score">
+            Points: <span class="score-number">0</span>
+          </p>
+          <button type="reset" class="btn-midgame-reset">Restart</button>
+
+          <img
+            class="img"
+            src="media/img/1.jpg"
+            alt="Hitler and His Generals"
+          />
+        </div>
+      </div>
+
+      <div class="answers">
+        <div class="btn-first-row">
+          <button type="button" class="option btn-0">Roosevelt</button>
+          <button type="button" class="option btn-1">Hitler</button>
+        </div>
+
+        <div class="btn-second-row">
+          <button type="button" class="option btn-2">Mussolini</button>
+          <button type="button" class="option btn-3">Trump</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Answer is Correct/Wrong Display -->
+    <div class="temporary-result">
+      <section class="temporary-result-box-success">
+        <p class="result result-message">Correct Answer!</p>
+        <p>+3 Points</p>
+        <button class="result btn-result continue">Continue</button>
+      </section>
+
+      <section class="temporary-result-box-failure">
+        <p class="result result-message">Wrong Answer!</p>
+        <p class="score-wrong">-1 Point</p>
+        <button class="result btn-result try-again">Try Again</button>
+      </section>
+    </div>
+
+    <section class="game-end">
+      <div class="end-msg-box">
+        <p class="end-msg">
+          Congratulations!<br />
+          You've finished the game.
+        </p>
+        <p class="score-message">
+          Total Score : <span class="final-score">0</span>
+        </p>
+      </div>
+
+      <div>
+        <button type="reset" class="btn-reset">Start Again</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
